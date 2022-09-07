@@ -69,4 +69,8 @@ public class Restaurant {
         return name;
     }
 
+    public Integer totalItemsCost(List<String> selectedItems) {
+        return null;
+    }
+
 }
