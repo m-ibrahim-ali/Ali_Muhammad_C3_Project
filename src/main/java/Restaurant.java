@@ -70,7 +70,11 @@ public class Restaurant {
     }
 
     public Integer totalItemsCost(List<String> selectedItems) {
-        return null;
+        int totalAmount = 0;
+        for(String item: selectedItems) {
+            totalAmount = totalAmount + this.findItemByName(item).getPrice();
+        }
+        return totalAmount;
     }
 
 }
